@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="header-div">Disappearing Ninja</h2>
+        <div class="container">
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=1" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=2" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=3" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=4" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=5" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=6" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=7" alt="random image"/>
+            <img class="ninja-img" src="https://picsum.photos/200/300/?random=8" alt="random image"/>
+        </div>
+        <button id="reset-button">Restore</button>
+    </div>
+
+    <script>
+        $('.ninja-img').click(function(){
+            $(this).hide();
+        })
+
+        $('#reset-button').click(function(){
+            $('.ninja-img').show();
+        })
+
+        $('p').style('font-family', 'fantasy');
+    </script>
+</body>
+</html>
